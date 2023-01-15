@@ -736,7 +736,7 @@ app.post('/api/notes', (request, response) => {
   const note = request.body
   console.log(note)
 
-  response.json(note)
+  response.status(201).json(note)
 })
 // highlight-end
 ```
